@@ -17,17 +17,33 @@ Código Condição de pagamento
  * * No cartao
 */
 
+/**
+ *  Estruturas de repetição
+ */
+
+// while -> enquanto
 
 // recebendo o preço do produto e transformando o valor para decimal
 const precoProduto = parseFloat (prompt('Qual o preço do produto?'))
+
+while (isNaN(precoProduto) == true || precoProduto <= 0) {
+    alert('O preço do produto é inválido. Por favor, informe o preço apenas com números, sem carácteres especiais (letras ou acentos)')
+    precoProduto = parseFloat(prompt('Qual o preço do produto?'))
+}
+
 const mensagem = `
 Informe o método de pagamento:
 Digite 1 para pagamento em dinheiro
 Digite 2 para pagamento em cheque
 Digite 3 para pagamento em cartão
 `
-const metodoDePagamento = prompt(mensagem)
+let metodoDePagamento = parseInt(prompt(mensagem))
 
+while(metodoDePagamento <1 || metodoDePagamento >3) {
+    alert(`Metódo de pagamento inválido`)
+metodoDePagamento = parseInt(prompt(mensagem))
+
+}
 console.log(precoProduto)
 console.log(metodoDePagamento)
 
