@@ -22,19 +22,15 @@ const tipoComb = prompt(mensagem)
 
 
 if (tipoComb == 'a' && litro <= 25) {
-    const precoLitro = 1.9 * 0.98
-    const precoFinal = litro * precoLitro
+    const precoFinal = litro * 1.86
     alert(`O preço final foi de: ${precoFinal} reais com 2% de desconto por litro`)
 } else if (tipoComb == 'a' && litro >= 26) {
-    const precoLitro = 1.9 * 0.96
-    const precoFinal = litro * precoLitro
+    const precoFinal = litro * 1.82
     alert(`O preço final foi de: ${precoFinal} reais com 4% de desconto por litro`)
 } else if (tipoComb == 'g' && litro <= 25) {
-    const precoLitro = 2.7 * 0.97
-    const precoFinal = litro * precoLitro
+    const precoFinal = litro * 2.61
     alert(`O preço final foi de: ${precoFinal} reais com 3% de desconto por litro`)
 } else if (tipoComb == 'a' && litro >= 26) {
-    const precoLitro = 2.7 * 0.95
-    const precoFinal = litro * precoLitro
+    const precoFinal = litro * 25.65
     alert(`O preço final foi de: ${precoFinal} reais com 5% de desconto por litro`)
 }
