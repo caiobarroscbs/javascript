@@ -23,7 +23,8 @@
 
         for (let i = 0; i < qtdProdutos; i++) {
             let preco = parseFloat(prompt('Informe o valor do produto'))
-            precosProdutos[i]  = preco       
+            // precosProdutos[i]  = preco       
+            precosProdutos.push(preco) // pegar um valor e adiciona-lo no final do seu array
         }
 
         let soma = 0
