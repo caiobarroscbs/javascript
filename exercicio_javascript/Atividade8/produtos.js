@@ -25,7 +25,7 @@ for (let i = 1; i < 2; i++) {
    document.write(
    `<p> NOME: ${produto.nome} <p>
    <p> MARCA: ${produto.marca} <p>
-   <p> IMAGEM:<img src="${produto.img}"> <p>
+   <p> IMAGEM:<img src="${produto.img}" height='200px'> <p>
    <p> PREÇO: ${produto.preco} <p>
    <p> ESTOQUE: ${produto.qtdEstoque} <p>
    <p> TOTAL EM ESTOQUE: ${precoTotal} <p>`
