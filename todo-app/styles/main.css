@@ -1,0 +1,41 @@
+:root { 
+    --blue: #0f637a;
+    --yellow: #ffd900;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+main {
+    min-height: 100vh;
+}
+
+#main-header {
+    height: 90px;
+}
+
+#app-logo {
+    width: 220px;
+}
+
+#add-todo {
+    font-size: 0;
+    background-color: var(--yellow);
+}
+
+#todos-list .card {
+    background-color: var(--yellow);
+}
+
+#todos-list .card + .card {
+    padding-top: 10px;
+}
+
+.todo-text {
+    margin: 0;
+}
+
+.delete-todo {
+    font-size: 0;
+}
